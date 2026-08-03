@@ -1,0 +1,18 @@
+# ROS 2 build and install artifacts
+build/
+install/
+log/
+
+# Python caching
+__pycache__/
+*.pyc
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+.project
+.cproject
+*.swp
+*~
+.directory
+.DS_Store

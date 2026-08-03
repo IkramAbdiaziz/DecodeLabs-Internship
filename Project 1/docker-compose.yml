@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  simulation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: robotic_arm_kinematics:latest
+    container_name: robotic_arm_simulation
+    network_mode: host
+    ipc: host
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - LIBGL_ALWAYS_SOFTWARE=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ~/.Xauthority:/root/.Xauthority:ro
+    stdin_open: true
+    tty: true
