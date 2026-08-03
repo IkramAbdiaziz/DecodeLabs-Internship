@@ -16,6 +16,20 @@ This ROS 2 package simulates a 6-DOF industrial manipulator, resolves inverse ki
 
 ---
 
+## 📊 Simulation Results
+
+Below are screenshots of the running simulation with the 6-DOF robotic manipulator rendering and executing trajectories:
+
+### Gazebo Simulation
+The arm is fully spawned in Gazebo with visual shapes, joint linkages, and dynamic controllers:
+![Gazebo Result](media/gazebo_result.png)
+
+### RViz2 Visualization & TF Frames
+The planner node tracks link transforms (TF frames) and displays joint constraints relative to the `world` coordinate frame:
+![RViz2 Result](media/rviz_result.png)
+
+---
+
 ## Execution Options
 
 ### Option A: Run via Docker (Recommended for Ubuntu 26.04)
