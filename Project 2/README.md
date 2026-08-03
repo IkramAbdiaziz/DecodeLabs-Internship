@@ -18,7 +18,7 @@ The inspection pipeline operates through the following stages:
    - **Convexity Defects**: Detects indentations where the contour diverges from the convex hull.
 3. **Defect Quantification**:
    - Loops over defect vectors `[start_index, end_index, farthest_point_index, depth]`.
-   - Converts fixed-point depth to actual pixel distance: $\text{actual\_distance} = \text{depth} / 256.0$.
+   - Converts fixed-point depth to actual pixel distance: `actual_distance = depth / 256.0`.
    - Filters distances against a calibrated threshold parameter `THRESHOLD_MAX = 43.0`.
 4. **Industrial Control Verdict**:
    - **PASS**: If no defect depth exceeds the threshold. Logs binary PLC signal `PLC_FAIL_TRIGGER = 0`.
