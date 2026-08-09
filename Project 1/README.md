@@ -16,7 +16,7 @@ This ROS 2 package simulates a 6-DOF industrial manipulator, resolves inverse ki
 
 ---
 
-## 📊 Simulation Results
+## Simulation Results
 
 Below are screenshots of the running simulation with the 6-DOF robotic manipulator rendering and executing trajectories:
 
