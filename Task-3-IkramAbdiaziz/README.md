@@ -1,4 +1,4 @@
-# Project 3: Autonomous Mobile Robot (AMR) Navigation
+# Task 3: Autonomous Mobile Robot (AMR) Navigation
 
 This ROS 2 package simulates a differential-drive Autonomous Mobile Robot (AMR) in a Gazebo maze environment. It fuses sensor data using an Extended Kalman Filter (EKF), maps the environment in real time with Ceres SLAM, plans optimal paths using a custom 8-connected grid A* pathfinder, and features a reflex-level safety deceleration controller.
 
@@ -36,7 +36,7 @@ Since ROS 2 is not pre-packaged natively for Ubuntu 26.04, running inside a Dock
 ### 1. Launch the Simulation
 Run the pre-configured launcher script from this directory. It authorizes your local X11 display socket and starts the container composition:
 ```bash
-cd "/home/ikram/DecodeLabs Internship/Project 3"
+cd "/home/ikram/DecodeLabs Internship/Task-3-IkramAbdiaziz"
 ./run_docker.sh
 ```
 *(This builds the docker container, compiles the workspace, and boots Gazebo, RViz2, SLAM, EKF, and the custom pathfinder nodes automatically)*
@@ -75,7 +75,7 @@ ros2 run tf2_ros tf2_echo map base_footprint
 ## File Structure
 
 ```text
-Project 3/
+Task-3-IkramAbdiaziz/
 ├── Dockerfile                   # Container definition (ROS 2 Humble + Nav2, slam_toolbox)
 ├── docker-compose.yml           # Volume and GUI socket composition
 ├── run_docker.sh                # Grants X11 access and starts container up

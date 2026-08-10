@@ -1,4 +1,4 @@
-# Project 1: Robotic Arm Kinematics & Path Planning
+# Task 1: Robotic Arm Kinematics & Path Planning
 
 This ROS 2 package simulates a 6-DOF industrial manipulator, resolves inverse kinematics (IK) in real-time, generates smooth collision-free paths, and controls the arm dynamically inside a Gazebo and RViz simulation.
 
@@ -39,7 +39,7 @@ Since ROS 2 is not pre-packaged natively for Ubuntu 26.04, running inside a Dock
 1. **Verify X11 Permissions & Start the Container**:
    Run the pre-configured run script from this directory. It automatically configures local X11 display authorities and launches the container:
    ```bash
-   cd "/home/ikram/DecodeLabs Internship/Project 1"
+   cd "/home/ikram/DecodeLabs Internship/Task-1-IkramAbdiaziz"
    ./run_docker.sh
    ```
    *(This builds the Docker image and launches Gazebo, RViz, and the Kinematics node. Graphical windows will automatically render on your desktop)*
@@ -72,7 +72,7 @@ If you are running on a machine with ROS 2 (Humble/Jazzy) installed natively:
    ```bash
    mkdir -p ~/robotic_arm_ws/src
    cd ~/robotic_arm_ws/src
-   cp -r "/home/ikram/DecodeLabs Internship/Project 1" ./robotic_arm_kinematics
+   cp -r "/home/ikram/DecodeLabs Internship/Task-1-IkramAbdiaziz" ./robotic_arm_kinematics
    ```
 
 2. **Install Dependencies**:
@@ -115,7 +115,7 @@ If you are running on a machine with ROS 2 (Humble/Jazzy) installed natively:
 ## File Structure
 
 ```text
-Project 1/
+Task-1-IkramAbdiaziz/
 ├── package.xml                   # ROS 2 dependency metadata
 ├── CMakeLists.txt                # Build configuration and executable compilation rules
 ├── README.md                     # This documentation file

@@ -1,4 +1,4 @@
-# Project 2: Automated Quality Inspection (Computer Vision)
+# Task 2: Automated Quality Inspection (Computer Vision)
 
 A production-grade, high-performance Computer Vision package built to automate structural defect detection (broken/missing teeth, fractures, and cracks) in manufactured gears. The system processes images or live webcam streams in real time, computes topological features, and triggers binary PLC verdicts.
 
@@ -29,7 +29,7 @@ The inspection pipeline operates through the following stages:
 ## Project Structure
 
 ```text
-Project 2/
+Task-2-IkramAbdiaziz/
 ├── generate_dataset.py  # Generates synthetic gear image dataset (20 images)
 ├── README.md            # Execution and architecture documentation
 ├── dataset/             # Raw dataset folder
@@ -72,25 +72,25 @@ pip install --break-system-packages opencv-python numpy matplotlib
 ### 2. Generate the Synthetic Dataset
 Build the training and control dataset (10 PASS and 10 FAIL gears with randomized rotations, scales, translations, radial lighting gradients, and sensor noise):
 ```bash
-python3 "Project 2/generate_dataset.py"
+python3 "Task-2-IkramAbdiaziz/generate_dataset.py"
 ```
 
 ### 3. Run the Batch Performance Evaluation
 Execute the batch processor to evaluate all 20 images, verify 100% accuracy, and measure frame latency:
 ```bash
-python3 "Project 2/src/batch_process.py"
+python3 "Task-2-IkramAbdiaziz/src/batch_process.py"
 ```
 
 ### 4. Process a Single Image File
-Run the inspection pipeline on a single image and save the annotated output under `Project 2/outputs/`:
+Run the inspection pipeline on a single image and save the annotated output under `Task-2-IkramAbdiaziz/outputs/`:
 ```bash
-python3 "Project 2/src/inspection.py" --image "Project 2/dataset/fail/gear_fail_02.png"
+python3 "Task-2-IkramAbdiaziz/src/inspection.py" --image "Task-2-IkramAbdiaziz/dataset/fail/gear_fail_02.png"
 ```
 
 ### 5. Process a Full Directory
 Run the inspection pipeline over all images in a target directory:
 ```bash
-python3 "Project 2/src/inspection.py" --dir "Project 2/dataset/pass"
+python3 "Task-2-IkramAbdiaziz/src/inspection.py" --dir "Task-2-IkramAbdiaziz/dataset/pass"
 ```
 
 ### 6. Run Live Webcam Inspection
