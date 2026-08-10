@@ -4,7 +4,7 @@ This ROS 2 package simulates a differential-drive Autonomous Mobile Robot (AMR) 
 
 ---
 
-## ⚙️ Navigation System Architecture
+## Navigation System Architecture
 
 The robot navigation system consists of the following components:
 
@@ -29,7 +29,7 @@ The robot navigation system consists of the following components:
 
 ---
 
-## 🚀 How to Install and Run
+## How to Install and Run
 
 Since ROS 2 is not pre-packaged natively for Ubuntu 26.04, running inside a Docker container with GUI socket forwarding is the most robust and straightforward approach.
 
@@ -72,7 +72,7 @@ ros2 run tf2_ros tf2_echo map base_footprint
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 ```text
 Project 3/
@@ -98,7 +98,7 @@ Project 3/
 
 ---
 
-## 📊 Simulation & Navigation Results
+## Simulation & Navigation Results
 
 Here are the visual execution logs of the Autonomous Mobile Robot (AMR) navigating inside the maze using the custom A* pathfinder and SLAM mapping:
 
